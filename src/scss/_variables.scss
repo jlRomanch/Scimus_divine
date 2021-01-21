@@ -1,0 +1,24 @@
+@mixin headerFont($size) {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: $size;
+}
+
+@mixin mainFont($size, $color) {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin text {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+$originColor: #05a1a1;

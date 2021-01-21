@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/header_background_v1.jpg) center no-repeat;
+    background-size: cover;
+    .top-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .logo img {
+            max-width: 230px;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 100%;
+            a {
+                margin-right: 8%;
+                margin-left: 8%;
+                text-decoration: none;
+                padding: 50px;
+                @include headerFont(18px);
+            }
+        }
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        justify-content: center;
+        padding-bottom: 15%;
+        h1 {
+            @include headerFont(24px);
+        }
+        a {
+            background: $originColor;
+            border: 0;
+            width: 10%;
+            margin: 0 auto;
+            margin-top: 15px;
+            text-decoration: none;
+            font-family: "Cantarell", sans-serif;
+            color: white;
+            font-size: 18px;
+            padding: 18px;
+        }
+    }
+}
+
+main {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+    .toolbar {
+        display: flex;
+        justify-content: flex-end;
+        input {
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+        }
+    }
+    .post-list {
+        h1 {
+            text-align: right;
+            @include mainFont(24px, black);
+            margin-top: 20px;
+        }
+        article {
+            background-color: rgba(235, 228, 228, 0.726);
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            img {
+                width: 30%;
+                height: 30%;
+            }
+            div .post {
+                padding: 10px;
+                .post-description {
+                    color: red;
+                    padding: 10px;
+                    margin-bottom: 5px;
+                    border-bottom: 2px solid rgb(132, 149, 168);
+                }
+                h3 {
+                    @include mainFont(18px, $originColor);
+                }
+                p {
+                    @include text;
+                    margin-top: 5px;
+                }
+            }
+            div {
+                .btn {
+                    background-color: $originColor;
+                    position: absolute;
+                    right: 15%;
+                    width: 200px;
+                    height: 40px;
+                    border: 0;
+                    @include headerFont(18px);
+                }
+            }
+        }
+    }
+    .about {
+        padding: 10px;
+        padding-top: 40px;
+        div {
+            h1 {
+                text-align: right;
+                @include mainFont(24px, black);
+            }
+            p {
+                @include text;
+                margin-bottom: 20px;
+            }
+        }
+        div {
+            img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+    .contact-form {
+        text-align: right;
+        @include mainFont(18px, black);
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-items: right;
+        justify-content: flex-end;
+        width: 100%;
+        label {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+                sans-serif;
+            text-transform: none;
+            color: $originColor;
+            margin-top: 40px;
+            margin-bottom: 5px;
+        }
+        .main-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .input-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+                input {
+                    height: 60px;
+                }
+            }
+        }
+        textarea {
+            width: 100%;
+        }
+        .button-wrapper{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            button {
+                border: 0;
+                background-color: $originColor;
+                @include headerFont(18px);
+                width: 200px;
+                height: 30px;
+            }
+        }
+        
+    }
+}

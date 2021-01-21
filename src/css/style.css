@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden; }
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/header_background_v1.jpg) center no-repeat;
+  background-size: cover; }
+  header .top-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    header .top-wrapper .logo img {
+      max-width: 230px; }
+    header .top-wrapper nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%; }
+      header .top-wrapper nav a {
+        margin-right: 8%;
+        margin-left: 8%;
+        text-decoration: none;
+        padding: 50px;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 18px; }
+  header section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    padding-bottom: 15%; }
+    header section h1 {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 24px; }
+    header section a {
+      background: #05a1a1;
+      border: 0;
+      width: 10%;
+      margin: 0 auto;
+      margin-top: 15px;
+      text-decoration: none;
+      font-family: "Cantarell", sans-serif;
+      color: white;
+      font-size: 18px;
+      padding: 18px; }
+
+main {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 10px; }
+  main .toolbar {
+    display: flex;
+    justify-content: flex-end; }
+    main .toolbar input {
+      width: 200px;
+      height: 50px;
+      padding: 10px; }
+  main .post-list h1 {
+    text-align: right;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: black;
+    margin-top: 20px; }
+  main .post-list article {
+    background-color: rgba(235, 228, 228, 0.726);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; }
+    main .post-list article img {
+      width: 30%;
+      height: 30%; }
+    main .post-list article div .post {
+      padding: 10px; }
+      main .post-list article div .post .post-description {
+        color: red;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-bottom: 2px solid #8495a8; }
+      main .post-list article div .post h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #05a1a1; }
+      main .post-list article div .post p {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        line-height: 30px;
+        font-size: 18px;
+        margin-top: 5px; }
+    main .post-list article div .btn {
+      background-color: #05a1a1;
+      position: absolute;
+      right: 15%;
+      width: 200px;
+      height: 40px;
+      border: 0;
+      font-family: "Roboto", sans-serif;
+      color: white;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 18px; }
+  main .about {
+    padding: 10px;
+    padding-top: 40px; }
+    main .about div h1 {
+      text-align: right;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 24px;
+      color: black; }
+    main .about div p {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      line-height: 30px;
+      font-size: 18px;
+      margin-bottom: 20px; }
+    main .about div img {
+      width: 100%;
+      height: 300px; }
+  main .contact-form {
+    text-align: right;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: black;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+    justify-content: flex-end;
+    width: 100%; }
+    main .contact-form label {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      text-transform: none;
+      color: #05a1a1;
+      margin-top: 40px;
+      margin-bottom: 5px; }
+    main .contact-form .main-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      main .contact-form .main-wrapper .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 48%; }
+        main .contact-form .main-wrapper .input-wrapper input {
+          height: 60px; }
+    main .contact-form textarea {
+      width: 100%; }
+    main .contact-form .button-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px; }
+      main .contact-form .button-wrapper button {
+        border: 0;
+        background-color: #05a1a1;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 18px;
+        width: 200px;
+        height: 30px; }
